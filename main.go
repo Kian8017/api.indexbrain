@@ -1,10 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"github.com/joho/godotenv"
 	"log"
 	"os"
-	"fmt"
 )
 
 func main() {
@@ -15,6 +15,7 @@ func main() {
 
 	redisUrl := os.Getenv("REDIS_URL")
 	sqlitePath := os.Getenv("SQLITE_PATH")
+	listenAddr := os.Getenv("LISTEN_ADDR")
 
-	fmt.Println("Got redis", redisUrl, "sqlite", sqlitePath);
+
 }

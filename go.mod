@@ -2,4 +2,7 @@ module github.com/Kian8017/indexbrainapi
 
 go 1.16
 
-require github.com/joho/godotenv v1.3.0 // indirect
+require (
+	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/joho/godotenv v1.3.0 // indirect
+)
