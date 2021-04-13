@@ -1,8 +1,8 @@
-module github.com/Kian8017/indexbrainapi
+module sib
 
 go 1.16
 
 require (
-	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
+	github.com/rs/cors v1.7.0 // indirect
 )

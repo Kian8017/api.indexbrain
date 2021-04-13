@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/joho/godotenv"
 	"log"
 	"os"
@@ -13,9 +12,9 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	redisUrl := os.Getenv("REDIS_URL")
-	sqlitePath := os.Getenv("SQLITE_PATH")
+	nameFolder := os.Getenv("NAME_FOLDER")
 	listenAddr := os.Getenv("LISTEN_ADDR")
 
-
+	s := NewServer(listenAddr, nameFolder)
+	s.Run()
 }
